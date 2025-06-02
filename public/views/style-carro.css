@@ -73,7 +73,7 @@ body {
   background-color: #0056b3;
 }
 
-/* Responsividade */
+
 @media (max-width: 600px) {
   .cadastrar-carros {
     padding: 20px;
