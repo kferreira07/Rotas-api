@@ -1,5 +1,6 @@
-/* Reset básico */
-* {
+*
+ {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,61 +13,36 @@ body.cadastrar {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
-/* Container geral */
+/* Container central do formulário */
 .container-cadastro {
-  display: flex;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-  max-width: 900px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
   width: 100%;
-  overflow: hidden;
+  max-width: 500px;
+  padding: 50px 40px;
 }
 
-/* Lado imagem */
-.imagem-lado {
-  flex: 1;
-  background: #2c3e50;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.imagem-lado img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  object-fit: cover;
-}
-
-/* Formulário */
-.cadastrar-form {
-  flex: 1;
-  padding: 40px 50px;
-  display: flex;
-  flex-direction: column;
-}
-
+/* Título e barra */
 .titulo-barra2 h1 {
   color: #333;
-  font-size: 2.4rem;
-  margin-bottom: 10px;
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 .barra-horizontal {
-  width: 50px;
+  width: 60px;
   height: 4px;
   background: #2c3e50;
- 
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   border-radius: 2px;
 }
 
-/* Campos do formulário */
+/* Inputs */
 .campo-input {
   display: flex;
   flex-direction: column;
@@ -75,52 +51,48 @@ body.cadastrar {
 
 .campo-input label {
   font-weight: 600;
-  margin-bottom: 6px;
-  color: #555;
+  margin-bottom: 8px;
+  color: #444;
 }
 
 .campo-input input {
-  padding: 12px 15px;
-  border: 1.8px solid #ccc;
+  padding: 12px 14px;
+  border: 1.5px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
-  transition: border-color 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .campo-input input:focus {
-  background: #2c3e50;
-  
+  border-color: #2c3e50;
+  background: #f7f9fa;
   outline: none;
 }
 
 /* Botão */
 .cadastrar-btn {
-  margin-top: 15px;
-  padding: 15px;
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+ 
   background: #2c3e50;
  
   border: none;
   border-radius: 8px;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 700;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .cadastrar-btn:hover {
-  background: #29415a;
+  background: #223546;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+/* Responsivo */
+@media (max-width: 500px) {
   .container-cadastro {
-    flex-direction: column;
-  }
-  .imagem-lado {
-    padding: 20px;
-  }
-  .cadastrar-form {
     padding: 30px 20px;
   }
 }
